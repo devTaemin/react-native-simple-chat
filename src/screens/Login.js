@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { Button } from 'react-native';
 import { Image } from '../components';
+import { images } from '../utils/images';
 
 const Container = styled.SafeAreaView`
     flex: 1;
@@ -13,7 +14,10 @@ const Container = styled.SafeAreaView`
 const Login = ({ navigation }) => {
     return (
         <Container>
-            <Image />
+            <Image 
+                url={images.logo}
+                imageStyle={{ borderRadius: 8 }}
+            />
             <Button
                 title="signup" 
                 onPress={() => navigation.navigate('Signup')} 

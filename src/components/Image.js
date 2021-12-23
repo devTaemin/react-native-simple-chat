@@ -7,7 +7,7 @@ const Container = styled.SafeAreaView`
     margin-bottom: 30px;
 `;
 
-const StyledImage = styled.SafeAreaView`
+const StyledImage = styled.Image`
     background-color: ${({ theme }) => theme.imageBackground};
     width: 100px;
     height: 100px;
