@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { Text, Button } from 'react-native';
+import { Button } from 'react-native';
+import { Image } from '../components';
 
 const Container = styled.SafeAreaView`
     flex: 1;
@@ -12,8 +13,8 @@ const Container = styled.SafeAreaView`
 const Login = ({ navigation }) => {
     return (
         <Container>
-            <Text style={{ fontSize: 30 }}>Login Screen</Text>
-            <Button 
+            <Image />
+            <Button
                 title="signup" 
                 onPress={() => navigation.navigate('Signup')} 
             />
